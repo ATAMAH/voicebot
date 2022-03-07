@@ -1,0 +1,22 @@
+{
+  "name": "voicebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ATAMAH/voicebot.git"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "node-telegram-bot-api": "^0.56.0",
+    "socks5-https-client": "^1.2.1",
+    "steno": "^1.0.0"
+  }
+}
