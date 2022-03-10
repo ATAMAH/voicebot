@@ -45,7 +45,7 @@ function Controller(parameters) {
 
 Controller.prototype.processTelegramData = async function(data) {
   if (data.cmd) {
-    if (data.raw.chat.type != 'group') {
+    if (data.raw.chat.type == 'private') {
       if (this.commands[data.cmd.cmd]) {
         this.commands[data.cmd.cmd](data, this);
       }
