@@ -10,7 +10,7 @@ function Voice(parameters) {
   this.parameters = parameters;
   this.config = parameters.config.voice;
   debugOut = this.parameters.debug;
-  this.baseUrl = `https://${this.config.region}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=${this.config.locale}`;
+  this.baseUrl = `https://${this.config.region}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=${this.config.locale}&profanity=raw`;
 }
 
 Voice.prototype.request = async function(data) {
